@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="点线面 AI 产品生成中台：从产品想法到可交互预览和上线交付。" />
+    <title>点线面 · AI 产品生成中台</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="点线面首页"><span aria-hidden="true">✦</span><strong>点线面</strong></a>
+      <nav aria-label="页面导航">
+        <a href="#workflow">产品流程</a>
+        <a href="#preview">页面预览</a>
+        <a href="#architecture">技术架构</a>
+        <a class="github" href="https://github.com/daaaayuuuu/point-line-plane">查看源码 ↗</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="eyebrow"><i></i> AI 产品从想法到交付</div>
+        <h1>把一句产品想法，<br /><em>变成可以亲手体验的 Web 产品</em></h1>
+        <p>先澄清 PRD，再用低保真故事板确认方案；选择 UI 风格后生成真实 HTML，最后通过可解释的部署流程完成上线准备。</p>
+        <div class="hero-actions">
+          <a class="primary" href="#preview">查看产品界面</a>
+          <a class="secondary" href="https://github.com/daaaayuuuu/point-line-plane">Frontend + Backend ↗</a>
+        </div>
+        <div class="promise-grid" aria-label="核心能力">
+          <span><b>01</b>完整 PRD</span><span><b>02</b>可视化方案</span><span><b>03</b>真实 HTML</span><span><b>04</b>部署交付</span>
+        </div>
+      </section>
+
+      <section class="workflow section" id="workflow">
+        <div class="section-heading"><span>WORKFLOW</span><h2>四步完成产品确认</h2><p>每一步都有清楚的用户决策和可带走的阶段产物。</p></div>
+        <div class="steps">
+          <article><b>01</b><h3>提出点子</h3><p>用对话和附件补齐真实需求，生成一份可检查的完整 PRD。</p><small>产物 · 已确认 PRD</small></article>
+          <article><b>02</b><h3>确认方案</h3><p>通过低保真页面故事板确认关键流程、页面状态和首版范围。</p><small>产物 · 可视化产品方案</small></article>
+          <article><b>03</b><h3>生成预览</h3><p>读取 PRD、方案和 UI 风格，生成真实 HTML 并开放点击体验。</p><small>产物 · 可交互 Web 产品</small></article>
+          <article><b>04</b><h3>部署上线</h3><p>左侧助手逐步引导，右侧完成云资源、费用和上线后验收。</p><small>产物 · 上线地址与交付物</small></article>
+        </div>
+      </section>
+
+      <section class="showcase section" id="preview">
+        <div class="section-heading"><span>PRODUCT PREVIEW</span><h2>生成结果可以直接操作</h2><p>这不是模糊占位图，而是当前版本在 Chrome 中运行的真实页面截图。</p></div>
+        <figure class="browser-frame">
+          <div class="browser-bar"><i></i><i></i><i></i><span>生成预览 · 可交互 HTML</span></div>
+          <img src="media/interactive-preview.png" alt="点线面生成的西瓜时间学习闹钟预览" />
+        </figure>
+      </section>
+
+      <section class="deployment section">
+        <div class="deployment-copy">
+          <span>DEPLOYMENT WORKBENCH</span>
+          <h2>部署流程也要让产品经理看得懂</h2>
+          <p>左侧通过聊天确认账号起点和问题，右侧按上线手册推进云平台准备、部署前自检、正式发布与上线后验收。</p>
+          <ul><li>费用资源创建前必须确认</li><li>AK/SK 不进入聊天、前端或交付物</li><li>模拟发布不伪造公网地址</li></ul>
+        </div>
+        <figure class="screen-card"><img src="media/deployment-workbench.png" alt="点线面部署上线工作台" /></figure>
+      </section>
+
+      <section class="architecture section" id="architecture">
+        <div class="section-heading"><span>ARCHITECTURE</span><h2>当前前后端完整保留</h2><p>历史阶段已清理，仓库只包含当前运行版本。</p></div>
+        <div class="architecture-grid">
+          <article><strong>frontend/</strong><h3>React 19 + TypeScript</h3><p>四步产品工作台、低保真方案、UI 风格选择、HTML 预览与部署助手。</p></article>
+          <div class="connector">REST API</div>
+          <article><strong>backend/</strong><h3>FastAPI + SQLAlchemy</h3><p>PRD、任务、质量门、预览、凭证加密、部署授权、交付与多用户运营。</p></article>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <span>OPEN SOURCE</span><h2>查看完整前端与当前后端</h2><p>README 中包含本地启动、环境变量和测试方式。</p><a href="https://github.com/daaaayuuuu/point-line-plane">打开 GitHub 仓库 ↗</a>
+      </section>
+    </main>
+
+    <footer><strong>点线面</strong><span>From idea to a working product.</span></footer>
+  </body>
+</html>

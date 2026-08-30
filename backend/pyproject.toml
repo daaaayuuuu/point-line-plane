@@ -1,0 +1,40 @@
+[project]
+name = "product-factory-backend"
+version = "0.8.0"
+description = "AI Product Factory M3/M4 multi-user operations and PostgreSQL backend"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "alembic>=1.13,<2",
+  "cryptography>=44,<47",
+  "fastapi>=0.115,<1",
+  "httpx>=0.27,<1",
+  "pydantic>=2.10,<3",
+  "pydantic-settings>=2.6,<3",
+  "psycopg[binary]>=3.2,<4",
+  "pypdf>=6,<7",
+  "python-multipart>=0.0.12,<1",
+  "sqlalchemy>=2.0,<3",
+  "uvicorn[standard]>=0.32,<1",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3,<9",
+  "pytest-asyncio>=0.24,<1",
+  "ruff>=0.11,<1",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]

@@ -1,0 +1,160 @@
+:root {
+  /* BOSS Design System · Light mode semantic colors */
+  --boss-text-base: #0a1b33;
+  --boss-text-secondary: #4c596a;
+  --boss-text-tertiary: #878f9b;
+  --boss-text-quaternary: #a7adb5;
+  --boss-text-disabled: #0a1b3338;
+  --boss-text-inverse: #ffffff;
+  --boss-text-primary: #1959d8;
+  --boss-text-danger: #d82f3d;
+  --boss-text-warning: #d8830d;
+  --boss-text-success: #1a9b00;
+
+  --boss-icon-dark: #0a1b33;
+  --boss-icon-base: #4c596a;
+  --boss-icon-light: #878f9b;
+  --boss-icon-lighter: #a7adb5;
+  --boss-icon-disabled: #0a1b3338;
+  --boss-icon-inverse: #ffffff;
+  --boss-icon-primary: #1c64f2;
+
+  --boss-bg-base: #0a1b330f;
+  --boss-bg-base-hover: #0a1b331f;
+  --boss-bg-base-active: #0a1b3338;
+  --boss-bg-light: #ffffff;
+  --boss-bg-light-hover: #f1f2f3;
+  --boss-bg-light-active: #e1e3e6;
+  --boss-bg-surface: #ffffff;
+  --boss-bg-surface-hover: #f1f2f3;
+  --boss-bg-surface-active: #e1e3e6;
+  --boss-bg-surface-secondary: #f7f8f9;
+  --boss-bg-surface-secondary-hover: #f1f2f3;
+  --boss-bg-surface-secondary-active: #e1e3e6;
+  --boss-bg-surface-sunken: #f7f8f9;
+  --boss-bg-disabled: #0a1b3308;
+  --boss-bg-primary: #1c64f2;
+  --boss-bg-primary-hover: #1959d8;
+  --boss-bg-primary-active: #164dbb;
+  --boss-bg-primary-light: #eff4fe;
+  --boss-bg-primary-light-hover: #d9e6ff;
+  --boss-bg-primary-light-active: #b3ccff;
+  --boss-bg-danger: #f23544;
+  --boss-bg-danger-light: #fef2f3;
+  --boss-bg-warning: #f2930f;
+  --boss-bg-warning-light: #fef6ec;
+  --boss-bg-success: #1dad00;
+  --boss-bg-success-light: #f2f8f2;
+
+  --boss-border-base: #0a1b331f;
+  --boss-border-light: #0a1b331a;
+  --boss-border-sidebar-divider: #0a1b330f;
+  --boss-border-dark: #878f9b;
+  --boss-border-primary: #1c64f2;
+  --boss-border-danger: #f23544;
+  --boss-border-warning: #f2930f;
+  --boss-border-success: #1dad00;
+  --boss-border-input: #e1e3e6;
+  --boss-border-input-hover: #1c64f2;
+  --boss-border-focused: #8db0f7;
+  --boss-border-disabled: #0a1b330f;
+  --boss-mask: #0a1b337d;
+  --boss-focus-ring: #d9e6ff;
+
+  /* BOSS typography: Chinese first, English second */
+  --font-product-sans: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif;
+  --font-product-mono: var(--font-geist-mono), "Roboto Mono", "SFMono-Regular", Consolas, monospace;
+  --text-caption: 12px;
+  --leading-caption: 20px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 22px;
+  --text-body: 16px;
+  --leading-body: 24px;
+  --text-subheading: 20px;
+  --leading-subheading: 32px;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 38px;
+  --text-heading: 32px;
+  --leading-heading: 48px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 72px;
+  --text-display: 56px;
+  --leading-display: 84px;
+
+  /* Published 8 px spacing scale */
+  --space-0: 0;
+  --space-25: 2px;
+  --space-50: 4px;
+  --space-75: 6px;
+  --space-100: 8px;
+  --space-150: 12px;
+  --space-200: 16px;
+  --space-250: 20px;
+  --space-300: 24px;
+  --space-400: 32px;
+  --space-500: 40px;
+  --space-600: 48px;
+  --space-800: 64px;
+  --space-1000: 80px;
+  --space-1200: 96px;
+  --space-1600: 128px;
+
+  --radius-none: 0;
+  --radius-xsmall: 2px;
+  --radius-small: 4px;
+  --radius-medium: 6px;
+  --radius-large: 8px;
+  --radius-xlarge: 12px;
+  --radius-xxlarge: 16px;
+  --radius-xxxlarge: 24px;
+  --radius-circle: 9999px;
+
+  --control-height-xsmall: 24px;
+  --control-height-small: 28px;
+  --control-height-default: 32px;
+  --control-height-large: 40px;
+  --dialog-width-small: 440px;
+  --dialog-width-default: 500px;
+  --dialog-width-large: 720px;
+
+  --shadow-0: inset 0 0 4px #0a1b331a;
+  --shadow-1: 0 0 1px #0a1b330a, 0 1px 4px #0a1b331a;
+  --shadow-2: 0 0 1px #0a1b331f, 0 2px 8px #0a1b331a;
+  --shadow-3: 0 0 1px #0a1b331a, 0 4px 16px #0a1b3324;
+  --shadow-4: 0 0 1px #0a1b3324, 0 10px 24px -2px #0a1b3329;
+  --shadow-5: 0 0 1px #0a1b3329, 0 20px 48px -4px #0a1b3333;
+
+  /* Compatibility aliases used by the existing product UI. */
+  --color-snow-canvas: var(--boss-bg-light);
+  --color-lavender-wash: var(--boss-bg-surface-secondary);
+  --color-midnight-ink: var(--boss-text-base);
+  --color-graphite-body: var(--boss-text-base);
+  --color-slate-caption: var(--boss-text-secondary);
+  --color-ash-helper: var(--boss-text-tertiary);
+  --color-stone-divider: var(--boss-border-base);
+  --color-fog-surface: var(--boss-bg-surface-secondary);
+  --color-royal-signal: var(--boss-bg-primary);
+  --color-cobalt-glow: var(--boss-bg-primary);
+  --color-mint-win: var(--boss-bg-success);
+  --color-coral-lost: var(--boss-bg-danger);
+  --color-amber-pending: var(--boss-bg-warning);
+  --color-azure-focus: var(--boss-border-input-hover);
+
+  /* Product exception retained from the user's Codex account reference. */
+  --color-codex-avatar: #b49a62;
+
+  --radius-md: var(--radius-small);
+  --radius-card: var(--radius-large);
+  --radius-input: var(--radius-xlarge);
+  --radius-panel: var(--radius-xxlarge);
+  --radius-container: var(--radius-xxxlarge);
+  --radius-pill: var(--radius-circle);
+  --shadow-card-token: var(--shadow-1);
+  --shadow-feature-token: var(--shadow-2);
+  --shadow-blue-token: 0 0 0 2px var(--boss-focus-ring);
+  --surface-canvas: var(--boss-bg-light);
+  --surface-wash: var(--boss-bg-surface-secondary);
+  --surface-card: var(--boss-bg-surface);
+  --page-max-width: 1200px;
+  --sidebar-width: 200px;
+}

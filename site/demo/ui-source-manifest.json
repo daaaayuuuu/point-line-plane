@@ -1,0 +1,14 @@
+{
+  "mode": "original-components-with-demo-data",
+  "sources": {
+    "features/factory/ProductFactoryApp.tsx": "33b41e3c62d192c5f4df72bbf0361e3b05ebc727a9f3d0e7a188c504f1d38d0a",
+    "features/factory/BossSteps.tsx": "ac84131f81f4d1bca336647191cda7bf158118a3da9d34796e719151797c1871",
+    "features/factory/StagePanels.tsx": "8415b4ed483e6546c969d34bdacf2b20c5022fa5270fac48f9ee21865be860d6",
+    "features/factory/stages/M1ARequirements.tsx": "275bbbf254c13c24806ae015795b14a21838b6f0558719bed41d473d3ae314ee",
+    "features/factory/stages/SolutionVisualDecisionView.tsx": "6faa3bb233c2dab054d18324335393c8b0662724e7162f1b7ce4417090837f3e",
+    "features/factory/stages/M1DPreview.tsx": "aad51f2cebbb902c9cccecc3dc0878a73149ca423f7e05e7e0743e08a3311222",
+    "features/factory/stages/M2BDeployment.tsx": "aac35ec6539ac42b1a8ebd420de928a09084383e8cb6847c988b0c894c8f18b5",
+    "app/globals.css": "091821c08e88df84f3dc1299d933fb98c07a3ffca2a48ec66b4091e68c2711d3",
+    "app/design-tokens.css": "265c040322f0c9c74d2ceed3fc38107b0333071cb1c2131d5a2fdfd38d85028c"
+  }
+}

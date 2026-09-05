@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="lineTone" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6f9fda" stop-opacity="0.30"/>
+      <stop offset="0.34" stop-color="#86add8" stop-opacity="0.22"/>
+      <stop offset="0.67" stop-color="#a9c5e3" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#d2e2f2" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="softEdge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="white" stop-opacity="0"/>
+      <stop offset="0.05" stop-color="white" stop-opacity="0.72"/>
+      <stop offset="0.13" stop-color="white"/>
+      <stop offset="0.87" stop-color="white"/>
+      <stop offset="0.95" stop-color="white" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="edgeFade">
+      <rect width="1920" height="1080" fill="url(#softEdge)"/>
+    </mask>
+  </defs>
+
+  <g
+    fill="none"
+    stroke="url(#lineTone)"
+    stroke-width="2"
+    vector-effect="non-scaling-stroke"
+    mask="url(#edgeFade)"
+  >
+    <!-- Reference-style construction circles, deliberately cropped by the viewport. -->
+    <circle cx="534" cy="510" r="350"/>
+    <circle cx="1508" cy="510" r="350"/>
+
+    <!-- Sparse horizontal construction guides. -->
+    <path d="M-120 652H2040"/>
+
+    <!-- Paired vertical guides echo the reference image without forming a grid. -->
+    <path d="M1379-100V1180"/>
+    <path d="M1581-100V1180"/>
+  </g>
+</svg>

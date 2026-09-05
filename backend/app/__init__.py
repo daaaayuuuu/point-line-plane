@@ -1,1 +1,0 @@
-"""AI Product Factory backend."""

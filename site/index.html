@@ -6,14 +6,16 @@
     <meta name="description" content="点线面 AI 产品生成中台：从提出点子、确认方案，到生成预览和部署上线。" />
     <meta name="theme-color" content="#061b3f" />
     <title>点线面｜从一个点子，到产品正式上线</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="media/point-line-plane-logo.svg" />
+    <link rel="stylesheet" href="styles.css?v=20260905-correct-product-url" />
+    <script src="navigation.js?v=20260905-correct-product-url" defer></script>
   </head>
   <body>
     <main id="top">
       <section class="hero">
         <header class="nav-shell">
           <a class="brand" href="#top" aria-label="点线面首页">
-            <span class="brand-mark" aria-hidden="true"><i></i></span>
+            <img class="brand-logo" src="media/point-line-plane-logo.svg" alt="" />
             <strong>点线面</strong>
           </a>
           <nav aria-label="页面导航">
@@ -24,38 +26,29 @@
           </nav>
           <div class="nav-actions">
             <a class="source-link" href="https://github.com/daaaayuuuu/point-line-plane" target="_blank" rel="noopener">查看源码</a>
-            <a class="experience-link" href="http://localhost:3000/" target="_blank" rel="noopener" title="需要先在本机启动点线面前端与后端">立即体验</a>
+            <a class="experience-link" href="./demo/" target="_blank" rel="noopener" title="无需登录，体验柠檬闹钟的完整四步 Demo">立即体验</a>
           </div>
         </header>
 
         <div class="hero-copy">
-          <div class="hero-symbol" aria-hidden="true"><span></span></div>
-          <h1>从一个点子<br />到产品正式上线</h1>
+          <img class="hero-logo" src="media/point-line-plane-logo.svg" alt="点线面" />
+          <h1>从一个点子到产品正式上线</h1>
           <p>提出想法、确认方案、生成可交互预览，再把产品部署上线。完整的 AI 产品工作流，交给点线面。</p>
-          <a class="hero-cta" href="http://localhost:3000/" target="_blank" rel="noopener" title="需要先在本机启动点线面前端与后端">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 19h14" /></svg>
+          <a class="hero-cta" href="./demo/" target="_blank" rel="noopener" title="无需登录，体验柠檬闹钟的完整四步 Demo">
             立即体验点线面
+            <span aria-hidden="true">→</span>
           </a>
         </div>
 
-        <div class="hero-media media-placeholder" role="img" aria-label="点线面完整工作流 GIF 动图素材占位">
-          <div class="placeholder-window">
-            <div class="window-bar"><i></i><i></i><i></i><span>点线面 · 产品工作台</span></div>
-            <div class="window-body">
-              <aside class="mock-sidebar">
-                <span class="mock-brand"></span>
-                <i class="active"></i><i></i><i></i><i></i>
-              </aside>
-              <div class="mock-stage">
-                <div class="mock-stepper"><b>01</b><span></span><b>02</b><span></span><b>03</b><span></span><b>04</b></div>
-                <div class="mock-message one"></div>
-                <div class="mock-message two"></div>
-                <div class="mock-document"><i></i><i></i><i></i><i></i><i></i></div>
-                <span class="mock-cursor"></span>
-              </div>
-            </div>
+        <div class="hero-media hero-browser">
+          <div class="hero-browser-toolbar" aria-hidden="true">
+            <div class="hero-browser-controls"><span class="hero-traffic-lights"><i></i><i></i><i></i></span><span class="hero-history"><svg viewBox="0 0 12 16"><path d="m8 3-5 5 5 5"/></svg><svg viewBox="0 0 12 16"><path d="m4 3 5 5-5 5"/></svg></span></div>
+            <div class="hero-address"><span>点线面 · 柠檬项目 Demo</span><svg class="hero-reload" viewBox="0 0 16 16"><path d="M12.6 6.2A4.8 4.8 0 1 0 12.8 9M12.6 2.8v3.6H9"/></svg></div>
+            <span class="hero-share"><svg viewBox="0 0 18 20"><path d="M9 12V1.8M5.8 5 9 1.8 12.2 5M5.5 8H3v10h12V8h-2.5"/></svg></span>
           </div>
-          <span class="asset-label">GIF 动图素材占位 · 1000 × 563</span>
+          <div class="hero-browser-content">
+          <img class="hero-product-image" src="media/hero-product.png" width="2860" height="1492" alt="点线面产品首页：不需要看代码，看着产品长出来" />
+          </div>
         </div>
       </section>
 
@@ -65,14 +58,8 @@
           <h2>提出点子，把模糊想法说清楚</h2>
           <p>用一句话描述想做的产品，也可以补充文档和参考资料。AI 会追问关键问题，把零散想法整理成一份可检查的完整 PRD。</p>
         </div>
-        <div class="feature-media idea-media" role="img" aria-label="提出点子模块配图素材占位">
-          <div class="idea-chat">
-            <div class="chat-head"><span></span><b>告诉我，你想做什么产品？</b></div>
-            <div class="chat-bubble">我想做一个能帮学生专注学习的番茄钟</div>
-            <div class="chat-reply"><span class="mini-symbol"></span><i></i><i></i><i></i></div>
-            <div class="chat-input"><span>继续补充你的想法…</span><b>↑</b></div>
-          </div>
-          <span class="asset-label">配图素材占位 · 提出点子</span>
+        <div class="feature-media idea-media">
+          <img class="feature-screenshot" src="media/feature-idea.png" width="2160" height="1420" alt="提出点子：产品需求文档" />
         </div>
       </section>
 
@@ -82,16 +69,8 @@
           <h2>确认方案，让每个页面都有依据</h2>
           <p>先看懂产品结构和关键流程，再通过低保真页面故事板确认首版范围。你确认之后，方案才会进入下一步。</p>
         </div>
-        <div class="feature-media solution-media" role="img" aria-label="确认方案模块配图素材占位">
-          <div class="solution-canvas">
-            <div class="flow-card first"><i></i><b>开始专注</b><span></span><span></span></div>
-            <div class="flow-line line-one"></div>
-            <div class="flow-card second"><i></i><b>专注计时</b><span></span><span></span></div>
-            <div class="flow-line line-two"></div>
-            <div class="flow-card third"><i></i><b>完成记录</b><span></span><span></span></div>
-            <div class="confirm-chip">✓ 方案已确认</div>
-          </div>
-          <span class="asset-label">配图素材占位 · 确认方案</span>
+        <div class="feature-media solution-media">
+          <img class="feature-screenshot" src="media/feature-solution.png" width="2160" height="1420" alt="确认方案：低保真原型" />
         </div>
       </section>
 
@@ -101,16 +80,8 @@
           <h2>生成预览，直接体验真实产品</h2>
           <p>选择合适的 UI 风格，系统会读取已确认的 PRD 和方案，生成可以点击、可以操作、可以继续修改的真实 Web 页面。</p>
         </div>
-        <div class="feature-media preview-media" role="img" aria-label="生成预览模块配图素材占位">
-          <div class="preview-browser">
-            <div class="browser-top"><i></i><i></i><i></i><span>localhost:3000 / preview</span></div>
-            <div class="preview-page">
-              <nav><b>FOCUS</b><span>今日计划　学习记录　我的成就</span></nav>
-              <div class="timer-card"><small>专注倒计时</small><strong>25:00</strong><button>开始专注</button></div>
-              <div class="preview-side"><i></i><i></i><i></i></div>
-            </div>
-          </div>
-          <span class="asset-label">配图素材占位 · 生成预览</span>
+        <div class="feature-media preview-media">
+          <img class="feature-screenshot" src="media/feature-preview.png" width="2160" height="1420" alt="生成预览：柠檬番茄闹钟" />
         </div>
       </section>
 
@@ -120,38 +91,27 @@
           <h2>部署上线，把成果交到真实用户手里</h2>
           <p>跟随部署助手完成账号准备、费用确认、发布和上线验收。每一步都有状态提示，最终获得可访问地址与完整交付物。</p>
         </div>
-        <div class="feature-media deploy-media" role="img" aria-label="部署上线模块配图素材占位">
-          <div class="deploy-board">
-            <aside>
-              <b>部署助手</b>
-              <p>我们会按步骤完成正式发布。</p>
-              <div class="assistant-bubble">环境检查完成，可以开始部署。</div>
-              <div class="deploy-input">输入问题或补充信息…</div>
-            </aside>
-            <div class="deploy-main">
-              <div class="deploy-title"><span>正式环境</span><b>部署进度</b></div>
-              <ol>
-                <li class="done"><b>✓</b><span><strong>云平台准备</strong><small>账号与区域已确认</small></span></li>
-                <li class="done"><b>✓</b><span><strong>部署前自检</strong><small>环境配置检查通过</small></span></li>
-                <li class="running"><b>3</b><span><strong>正式发布</strong><small>正在构建并上传</small></span><i></i></li>
-                <li><b>4</b><span><strong>上线后验收</strong><small>等待部署完成</small></span></li>
-              </ol>
-            </div>
-          </div>
-          <span class="asset-label">配图素材占位 · 部署上线</span>
+        <div class="feature-media deploy-media">
+          <img class="feature-screenshot" src="media/feature-deploy.png" width="2160" height="1420" alt="部署上线：产品上线结果" />
+          <div class="deployed-product-callout" id="deployed-product-tip">这个产品由点线面开发，点击下方链接即可体验<span aria-hidden="true">↓</span></div>
+          <a class="deployed-product-link" href="https://s9onubhqdi5h2g5bi26oi.apigateway-cn-beijing.volceapi.com/" target="_blank" rel="noopener" aria-label="打开柠檬番茄闹钟体验链接" aria-describedby="deployed-product-tip">
+            <svg class="deployed-link-globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z"/></svg>
+            <span class="deployed-link-url">https://s9onubhqdi5h2g5bi26oi.apigateway-cn-beijing.volceapi.com/</span>
+            <svg class="deployed-link-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
         </div>
       </section>
 
       <section class="final-cta">
-        <div class="final-symbol" aria-hidden="true"><span></span></div>
+        <img class="final-logo" src="media/point-line-plane-logo.svg" alt="" />
         <h2>把想法变成真正能用的产品</h2>
         <p>从第一句话开始，点线面陪你走完整个产品交付流程。</p>
-        <a href="http://localhost:3000/" target="_blank" rel="noopener">立即体验点线面</a>
+        <a href="./demo/" target="_blank" rel="noopener">立即体验点线面</a>
       </section>
     </main>
 
     <footer>
-      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i></span><strong>点线面</strong></a>
+      <a class="brand footer-brand" href="#top"><img class="brand-logo" src="media/point-line-plane-logo.svg" alt="" /><strong>点线面</strong></a>
       <span>从产品想法到正式交付</span>
       <a href="https://github.com/daaaayuuuu/point-line-plane" target="_blank" rel="noopener">GitHub ↗</a>
     </footer>

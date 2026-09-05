@@ -1,31 +1,5 @@
+node_modules/
 .DS_Store
+*.tsbuildinfo
 .env
 .env.*
-!.env.example
-
-# Frontend
-frontend/node_modules/
-frontend/.next/
-frontend/.vinext/
-frontend/dist/
-frontend/.wrangler/
-frontend/outputs/
-frontend/work/
-frontend/*.tsbuildinfo
-
-# Backend
-backend/.venv/
-backend/.pytest_cache/
-backend/.ruff_cache/
-backend/**/__pycache__/
-backend/.coverage
-backend/htmlcov/
-backend/data/*
-!backend/data/.gitkeep
-
-# Secrets and local artifacts
-*.pem
-*.key
-*.db
-*.db-shm
-*.db-wal

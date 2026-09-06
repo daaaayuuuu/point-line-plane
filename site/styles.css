@@ -138,7 +138,7 @@ main { overflow: hidden; }
 .feature-media { width: 100%; height: auto; padding: 40px 60px 0; border-radius: 24px; }
 .feature-media > .feature-screenshot { display: block; width: 100%; height: auto; border-radius: 16px 16px 0 0; box-shadow: 0 16px 56px -12px rgba(30, 42, 62, .10), 0 4px 20px -4px rgba(30, 42, 62, .04); }
 
-.idea-media { --feature-hue: 250; }
+.idea-media, .preview-media { --feature-hue: 250; }
 .idea-chat { width: min(800px, calc(100% - 80px)); padding: 36px; background: rgba(255, 255, 255, .95); border: 1px solid rgba(84, 126, 187, .14); border-radius: 18px; box-shadow: 0 28px 80px rgba(35, 85, 155, .18); }
 .chat-head { display: flex; align-items: center; gap: 12px; margin-bottom: 36px; font-size: 20px; }
 .chat-head > span, .mini-symbol { width: 30px; height: 30px; background: linear-gradient(145deg, #77c3ff, #1e59c5); border-radius: 10px 16px 10px 16px; transform: rotate(-10deg); }
@@ -151,7 +151,7 @@ main { overflow: hidden; }
 .chat-input { display: flex; align-items: center; justify-content: space-between; padding: 12px 13px 12px 18px; color: #9aa2af; background: #fff; border: 1px solid #e1e5eb; border-radius: 13px; }
 .chat-input b { width: 34px; height: 34px; display: grid; place-items: center; color: #fff; background: #2368ed; border-radius: 10px; }
 
-.solution-media { --feature-hue: 300; }
+.solution-media, .deploy-media { --feature-hue: 275; }
 .solution-canvas { position: relative; width: 900px; max-width: calc(100% - 70px); height: 470px; background-color: #fbfbf8; background-image: radial-gradient(#d7d9d6 1px, transparent 1px); background-size: 20px 20px; border: 1px solid #e4e4df; border-radius: 16px; box-shadow: 0 25px 65px rgba(47, 53, 48, .11); }
 .flow-card { position: absolute; top: 120px; width: 185px; height: 230px; padding: 20px; background: #fff; border: 1px solid #dedfdc; border-radius: 13px; box-shadow: 0 12px 30px rgba(35, 43, 38, .08); }
 .flow-card.first { left: 55px; }
@@ -167,7 +167,6 @@ main { overflow: hidden; }
 .line-two { right: 240px; }
 .confirm-chip { position: absolute; right: 26px; top: 24px; padding: 9px 13px; color: #208763; background: #e8f7ef; border-radius: 999px; font-size: 13px; font-weight: 700; }
 
-.preview-media { --feature-hue: 220; }
 .preview-browser { width: min(1000px, calc(100% - 70px)); height: 570px; overflow: hidden; background: #fff; border: 1px solid rgba(106, 75, 35, .2); border-radius: 14px; box-shadow: 0 30px 74px rgba(93, 62, 22, .2); }
 .browser-top { height: 40px; }
 .preview-page { position: relative; height: calc(100% - 40px); overflow: hidden; padding: 28px 48px; color: #35291c; background: #fffaf0; }
@@ -181,7 +180,6 @@ main { overflow: hidden; }
 .preview-side i { width: 120px; height: 62px; background: #f4e7d1; border-radius: 10px; }
 .preview-side i:nth-child(2) { width: 150px; background: #ead4b2; }
 
-.deploy-media { --feature-hue: 275; }
 .deploy-board { width: min(1040px, calc(100% - 70px)); height: 570px; display: grid; grid-template-columns: 35% 65%; overflow: hidden; background: #fff; border: 1px solid rgba(37, 64, 102, .14); border-radius: 15px; box-shadow: 0 32px 80px rgba(34, 61, 99, .2); }
 .deploy-board aside { position: relative; padding: 38px 30px; background: #f7f9fc; border-right: 1px solid #e6eaf0; }
 .deploy-board aside > b { color: #14233d; font-size: 21px; }
@@ -308,6 +306,17 @@ footer > a:last-child { justify-self: end; color: #454c59; }
   display: block;
   padding: 40px 60px 0;
   background: linear-gradient(145deg, oklch(95% .025 var(--feature-hue)) 0%, oklch(93% .035 var(--feature-hue)) 55%, oklch(91% .045 var(--feature-hue)) 100%);
+}
+
+/* Match the source screenshot coordinates so the captured focus ring is
+   hidden at every display size without covering its step number or label. */
+.solution-focus-mask {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  width: calc(100% - 120px);
+  height: auto;
+  pointer-events: none;
 }
 
 /* Fill the window corner baked into all four source screenshots.
